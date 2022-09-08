@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: rambda
+datasources:
+  default:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+#    schema-generate: CREATE_DROP
+    dialect: POSTGRES
