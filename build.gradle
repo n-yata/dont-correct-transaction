@@ -41,10 +41,6 @@ dependencies {
     testImplementation("org.testcontainers:testcontainers")
     compileOnly("org.graalvm.nativeimage:svm")
     
-    // spring
-    annotationProcessor("io.micronaut.spring:micronaut-spring-annotation")
-    implementation("io.micronaut.spring:micronaut-spring-annotation")
-    
     // org.json
 	implementation 'org.json:json:20220320'
 }

@@ -5,19 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyResponseEvent;
 
-import io.micronaut.data.exceptions.EmptyResultException;
-import jakarta.inject.Inject;
-
 //@MicronautTest
-@Transactional(rollbackFor = EmptyResultException.class)
 public class FunctionRequestHandlerTest {
 
-    @Inject
+    //    @Inject
     private static FunctionRequestHandler handler;
 
     @BeforeAll
@@ -31,7 +26,6 @@ public class FunctionRequestHandlerTest {
     }
 
     @Test
-    //    @Transactional(rollbackFor = EmptyResultException.class)
     public void testHandler() {
         /* 引数設定 */
         APIGatewayProxyRequestEvent request = new APIGatewayProxyRequestEvent();

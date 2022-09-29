@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: rambda
+    name: transaction-example
 datasources:
   default:
     driverClassName: org.postgresql.Driver
